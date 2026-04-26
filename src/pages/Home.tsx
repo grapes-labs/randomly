@@ -141,11 +141,11 @@ export function Home() {
           Randomly is constantly expanding. All our tools are optimized for developer workflows 
           and privacy. Suggest a new tool on our GitHub.
         </p>
-        <Link to="/tools/uuid">
+        <a href="https://github.com/grapes-labs/randomly/issues/new" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="rounded-full px-10 font-bold mt-4">
-            Explore All Tools
+            Suggest a New Tool
           </Button>
-        </Link>
+        </a>
       </section>
     </div>
   );
