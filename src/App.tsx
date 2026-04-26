@@ -4,6 +4,7 @@
  */
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { AppLayout } from "./components/layout/AppLayout";
 import { Home } from "./pages/Home";
 import { UUIDTool } from "./pages/tools/UUIDTool";
@@ -67,6 +68,7 @@ export default function App() {
           </AppLayout>
         </Router>
       </ToastProvider>
+      <Analytics />
     </ThemeProvider>
   );
 }
