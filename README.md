@@ -3,9 +3,9 @@
 A clean, fast, open-source developer toolbox.
 All tools run 100% in your browser — your data never leaves your machine.
 
-[![Live Site](https://img.shields.io/badge/live-randomly.dev-blue?style=flat-square)](https://randomly.grapeslabs.dev)
+[![Live Site](https://img.shields.io/badge/live-randomly.grapeslabs.dev-blue?style=flat-square)](https://randomly.grapeslabs.dev)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE)
-[![Built with Next.js](https://img.shields.io/badge/built%20with-Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org)
+[![Built with Vite](https://img.shields.io/badge/built%20with-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com)
 [![Open Source](https://img.shields.io/badge/open-source-orange?style=flat-square)](https://github.com)
 
@@ -56,8 +56,9 @@ Developers waste time googling the same tools over and over. Randomly centralize
 
 ## Tech Stack
 
-- [Next.js 14](https://nextjs.org) (App Router)
+- [Vite](https://vitejs.dev) + [React 19](https://react.dev)
 - [TypeScript](https://www.typescriptlang.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [shadcn/ui](https://ui.shadcn.com)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [Radix UI](https://www.radix-ui.com) primitives
+- Web Crypto API (hashing and encryption)
 - [Vercel](https://vercel.com) (deployment)
