@@ -11,7 +11,6 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@google/genai": "^1.29.0",
     "@noble/hashes": "^2.2.0",
     "@paralleldrive/cuid2": "^3.3.0",
     "@radix-ui/react-dialog": "^1.1.15",
@@ -28,8 +27,6 @@
     "clsx": "^2.1.1",
     "cron-parser": "^5.5.0",
     "cronstrue": "^3.14.0",
-    "dotenv": "^17.2.3",
-    "express": "^4.21.2",
     "jose": "^6.2.2",
     "lucide-react": "^0.546.0",
     "motion": "^12.38.0",
@@ -47,7 +44,6 @@
   },
   "devDependencies": {
     "@types/chroma-js": "^3.1.2",
-    "@types/express": "^4.17.21",
     "@types/node": "^22.14.0",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@types/spark-md5": "^3.0.5",
