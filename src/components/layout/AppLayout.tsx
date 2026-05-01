@@ -1,7 +1,7 @@
 import React from "react";
 import { Sidebar } from "./Sidebar";
 import { MobileNav } from "./MobileNav";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Coffee } from "lucide-react";
 import { SearchProvider } from "@/src/contexts/SearchContext";
 import { SearchInput } from "../ui/SearchInput";
 
@@ -29,9 +29,15 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
         <footer className="px-4 py-8 md:px-8 lg:px-12 max-w-5xl mx-auto w-full border-t border-border mt-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>
-              © {copyrightYear} Randomly by <a href="https://grapeslabs.dev" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground transition-colors">Grapes Labs</a>. Free, Fast & Private.
-            </p>
+            <div className="flex flex-col items-center md:items-start gap-1.5">
+              <p>
+                © {copyrightYear} Randomly by <a href="https://grapeslabs.dev" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground transition-colors">Grapes Labs</a>. Free, Fast & Private.
+              </p>
+              <a href="https://buymeacoffee.com/grapeslabst" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-foreground transition-colors group">
+                <Coffee className="w-4 h-4 group-hover:text-yellow-500 transition-colors" />
+                <span className="group-hover:underline">Buy me a coffee</span>
+              </a>
+            </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-green-500" />
               <span>All operations occur entirely in your browser</span>
