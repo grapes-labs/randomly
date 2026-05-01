@@ -6,6 +6,10 @@ import { SearchProvider } from "@/src/contexts/SearchContext";
 import { SearchInput } from "../ui/SearchInput";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
+  const currentYear = new Date().getFullYear();
+  const startYear = 2026;
+  const copyrightYear = currentYear > startYear ? `${startYear}-${currentYear}` : `${startYear}`;
+
   return (
     <SearchProvider>
       <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
@@ -25,7 +29,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
         <footer className="px-4 py-8 md:px-8 lg:px-12 max-w-5xl mx-auto w-full border-t border-border mt-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Randomly. Free, Fast & Private.</p>
+            <p>
+              © {copyrightYear} Randomly by <a href="https://grapeslabs.dev" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground transition-colors">Grapes Labs</a>. Free, Fast & Private.
+            </p>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-green-500" />
               <span>All operations occur entirely in your browser</span>
