@@ -29,9 +29,10 @@ import { JWTVerifier } from "./pages/tools/JWTVerifier";
 import { ColorPaletteTool } from "./pages/tools/ColorPaletteTool";
 import { CSVToJSONTool } from "./pages/tools/CSVToJSONTool";
 import { JSONToCSVTool } from "./pages/tools/JSONToCSVTool";
+import { SVGToPNGTool } from "./pages/tools/SVGToPNGTool";
 import { ThemeProvider } from "./components/theme-provider";
 import { ToastProvider } from "./components/ui/toast";
- 
+
 export default function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="dev-toolbox-theme">
@@ -54,6 +55,7 @@ export default function App() {
               <Route path="/tools/jwt" element={<JWTTool />} />
               <Route path="/tools/csv-json" element={<CSVToJSONTool />} />
               <Route path="/tools/json-csv" element={<JSONToCSVTool />} />
+              <Route path="/tools/svg-png" element={<SVGToPNGTool />} />
               <Route path="/tools/hash" element={<HashTool />} />
               <Route path="/tools/aes" element={<AESTool />} />
               <Route path="/tools/rsa" element={<RSATool />} />

@@ -204,6 +204,19 @@ export const CATEGORIES: Category[] = [
         seoDescription: "Transform JSON data into CSV format. Supports nested objects, custom delimiters, and quote handling.",
         keywords: ["json to csv", "convert json to csv", "json tool", "data converter"],
         techName: "Custom client-side CSV generator"
+      },
+      {
+        id: "svg-png",
+        name: "SVG to PNG",
+        description: "Convert SVG vector code into high-quality PNG images.",
+        path: "/tools/svg-png",
+        category: "Converters",
+        icon: ArrowLeftRight,
+        seoTitle: "Online SVG to PNG Converter - Free Image Tool",
+        seoDescription: "Transform SVG vector code into PNG format directly in your browser. Customize scaling and download instantly, 100% private.",
+        keywords: ["svg to png", "convert svg to png", "svg tool", "image converter"],
+        techName: "Canvas API",
+        techUrl: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
       }
     ]
   },
