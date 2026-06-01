@@ -17,7 +17,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         <div className="lg:pl-64 flex flex-col min-h-screen">
           <header className="sticky top-0 z-40 w-full bg-background/50 backdrop-blur-md border-b border-border lg:hidden">
             <div className="flex h-14 items-center px-4 gap-3">
-              <ShieldCheck className="w-6 h-6 text-primary" />
+              <img src="/favicon.svg" alt="Randomly Logo" className="w-6 h-6 rounded-md" />
               <span className="font-bold tracking-tight flex-1">Randomly</span>
               <SearchInput className="max-w-[180px]" />
             </div>
