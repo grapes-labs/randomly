@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://randomly.grapeslabs.dev/sitemap.xml

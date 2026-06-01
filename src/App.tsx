@@ -6,6 +6,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppLayout } from "./components/layout/AppLayout";
 import { Home } from "./pages/Home";
+import { RandomNumberTool } from "./pages/tools/RandomNumberTool";
 import { UUIDTool } from "./pages/tools/UUIDTool";
 import { NanoIDTool } from "./pages/tools/NanoIDTool";
 import { ULIDTool } from "./pages/tools/ULIDTool";
@@ -41,6 +42,7 @@ export default function App() {
           <AppLayout>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/tools/random-number" element={<RandomNumberTool />} />
               <Route path="/tools/uuid" element={<UUIDTool />} />
               <Route path="/tools/nanoid" element={<NanoIDTool />} />
               <Route path="/tools/ulid" element={<ULIDTool />} />
